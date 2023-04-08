@@ -1,0 +1,24 @@
+SEMANA 
+
+- context;
+
+- criar objeto submit do formulário:
+
+	const user = {name, email, job};
+
+- loading;
+
+
+
+ const deleting = async(id) =>{
+
+    const itemID = `${url}/${id}`
+    const res = await fetch(itemID, {
+      method: "DELETE",
+      headers: {"content-type": "application/json"},
+    })
+
+    const json = await res.json();
+
+    FetchData();
+  }

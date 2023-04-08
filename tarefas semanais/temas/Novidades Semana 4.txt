@@ -1,0 +1,12 @@
+SEMANA 4
+
+- UseState vs Variável comum (Let e Const);
+
+- Uso de input dentro de um formulário;
+
+- botão (para exbir algo ou mudar a className de uma tag)
+
+
+TAREFAS A SEREM IMPLEMENTADAS 
+
+- função usando o UseState para alterar número de gols de cada jogador;

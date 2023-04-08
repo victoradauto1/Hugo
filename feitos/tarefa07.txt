@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarefa 07 - 15/01/2023</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+
+-----------------------------------------------------
+import component from "./assets/component/component"
+
+function App() {
+  const exercicio = [
+
+    {
+      i: "1",
+      type: "Aves",
+      model: "Peito;",
+      size: "1 Kg;",
+      price: "R$ 15,00",
+      isSet: true
+    },
+    {
+      i: "2",
+      type: "Suino",
+      model: "Lombo;",
+      size: "1 Kg;",
+      price: "R$ 18,00",
+      isSet: false
+    },
+    {
+      i: "3",
+      type: "Bovino",
+      model: "Alcatra;",
+      size: "1 Kg;",
+      price: "R$ 28,00",
+      isSet: true
+    }
+  ]
+
+  return (
+    <div className="App">
+
+      <h1>Promoções no nosso açougue</h1>
+      {exercicio.map((set) => (
+
+        <div>
+
+          <h2>{set.type}</h2>
+
+          <ul>
+            <li>Corte da carne: {set.model}</li>
+            <li>Peso da embalagem mais o corte: {set.size}</li>
+            <li>Valor do kg: {set.price}</li>
+          </ul>
+
+          {/* {set.isSet ? <p>Disponivel no estoque!</p> ; style= {{"color":"white" , "backgroundColor":"green"}} : <p>Infelizmente não temos mais no estoque!</p>} */}
+
+
+        </div>
+
+      ))
+
+      }
+
+    </div>
+  )
+}
+
+export default App

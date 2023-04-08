@@ -1,0 +1,48 @@
+TAREFA SEMANA 4
+
+Projeto BRASIL NA COPA DE 1994
+
+- Será feito TUDO o que fora feito na tarefa passado, com exceção da função. Esta semana utilizaremos uma função para mudar a idade  dentro do próprio CARD informativo
+de cada jogador.
+
+1) Será mantidas as variantes que já tínhamos para calcular as idades na época da Copa e as idades atualmente. ageCup e ageNow (iremos usá-las adiante)
+
+2) criaremos a frase 1 e a frase 2 que serão utilizadas respectivamente para indicar a idade do jogador na época da Copa do Mundo em 1994 e outra
+indicando a idade atual do jogador.
+   Para tal usaremos novamente o uso de TEMPLATES LITERALS para criar as frase e introuzir a variantes (ageCup e ageNow). Veja o exemplo da primeira frase e depois,
+crie a segunda por conta própria:
+
+const phrase1 = `A idade do jogador ${name} na Copa de 1994 era de ${ageCup} anos!`
+
+OBS: Lembre-se que para podermos aplicar o TEMPLATES LITERALS temos de usar o sinal de crase para abrir e fechar as frase e usar ${ } para colocar as variáveis dentro
+deles.
+
+3) criaremos um botão semelhantes ao feito na tarefa passada e atribuiremos no onClick a função handlePhrase;
+
+4) Dentro da função handlePhrase iremos configurar uma const de useState:
+
+
+const [ phrase, setPhrase ] = useState(phrase1);
+
+	  A        B              C
+
+
+A) Será a variável em si, criada dentro de um useState (hook pretencente ao pacote nativo do React)
+
+
+B) Será a função acessória que pertence à variável, que serve apenas para mudar o valor da variável, porém com a capacidade da mesma ser refletida na renderização.
+
+C) Apenas quando atribuímos o nome "useState" é que a const se transforma em um. Dentro dos parenteses é facultado a nós colocarmos o "estado" inicial daquela variável.
+
+	No caso em tela, o card JÁ começa exibindo a frase que está guardada dentro da variável phrase1, portante ESTE será o "estado inicial".
+
+
+RESULTADO: O resultado final será a exibição dinâmica em tela da mudança da frase.
+
+
+
+
+
+		
+
+	

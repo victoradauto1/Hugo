@@ -1,0 +1,295 @@
+TAREFA SEMANA 3
+
+Projeto BRASIL NA COPA DE 1994
+
+- Utilizará a lista "copa94" (copiar e colar no App do projeto)
+
+brasil94 =[{
+  "id": 13,
+  "position": "Goleiro",
+  "birth": 1966,
+  "name": "Taffarel",
+  "team": "Reggiana-ITA",
+  "number": 1,
+  "isStarter": true
+ 
+}, {
+  "id": 14,
+  "position": "Lateral Direito",
+  "birth": 1964,
+  "name": "Jorginho",
+  "team": "Bayern de Munique-ALE",
+  "number": 2,
+  "isStarter": true
+
+}, {
+  "id": 15,
+  "position": "Zagueiro",
+  "birth": 1962,
+  "name": "Ricardo Rocha",
+  "team": "Vasco da Gama-BRA",
+  "number": 3,
+  "isStarter": true
+}, {
+  "id": 16,
+  "position": "Zagueiro",
+  "birth": 1965,
+  "name": "Ronaldão",
+  "team": "Shimizu S-Pulse-JAP",
+  "number": 4,
+  "isStarter": true
+},
+{
+  "id": 17,
+  "position": "Volante",
+  "birth": 1968,
+  "name": "Mauro Silva",
+  "team": "Deportivo La Coruña-ESP",
+  "number": 5,
+  "isStarter": true
+},
+{
+  "id": 18,
+  "position": "Lateral Esquerdo",
+  "birth": 1964,
+  "name": "Branco",
+  "team": "Fluminense-BRA",
+  "number": 6,
+  "isStarter": true
+},
+{
+  "id": 19,
+  "position": "Atacante",
+  "birth": 1964,
+  "name": "Bebeto",
+  "team": "Deportivo La Coruña-ESP",
+  "number": 7,
+  "isStarter": true
+},
+{
+  "id": 20,
+  "position": "Volante",
+  "birth": 1963,
+  "name": "Dunga",
+  "team": "Stuttgart-ALE",
+  "number": 8,
+  "isStarter": true
+},
+{
+  "id": 21,
+  "position": "Meia",
+  "birth": 1967,
+  "name": "Zinho",
+  "team": "Palmeiras-BRA",
+  "number": 9,
+  "isStarter": true
+},
+{
+  "id": 22,
+  "position": "Meia",
+  "birth": 1965,
+  "name": "Raí",
+  "team": "PSG-FRA",
+  "number": 10,
+  "isStarter": true
+},
+{
+  "id": 23,
+  "position": "Atacante",
+  "birth": 1966,
+  "name": "Romário",
+  "team": "Barcelona-ESP",
+  "number": 11,
+  "isStarter": true
+},
+{
+  "id": 23,
+  "position": "Goleiro",
+  "birth": 1965,
+  "name": "Zetti",
+  "team": "São Paulo-BRA",
+  "number": 12,
+  "isStarter": false
+},
+{
+  "id": 24,
+  "position": "Zagueiro",
+  "birth": 1965,
+  "name": "Aldair",
+  "team": "Roma-ITA",
+  "number": 13,
+  "isStarter": false
+},
+{
+  "id": 25,
+  "position": "Lateral Direito",
+  "birth": 1970,
+  "name": "Cafú",
+  "team": "São Paulo-BRA",
+  "number": 14,
+  "isStarter": false
+},
+{
+  "id": 26,
+  "position": "Zagueiro",
+  "birth": 1969,
+  "name": "Márcio Santos",
+  "team": "Bordaux-FRA",
+  "number": 15,
+  "isStarter": false
+},
+{
+  "id": 27,
+  "position": "Lateral Esquerdo",
+  "birth": 1969,
+  "name": "Leonardo",
+  "team": "São Paulo-BRA",
+  "number": 16,
+  "isStarter": false
+},
+{
+  "id": 28,
+  "position": "Meia",
+  "birth": 1966,
+  "name": "Mazinho",
+  "team": "Palmeiras-BRA",
+  "number": 17,
+  "isStarter": false
+},
+{
+  "id": 29,
+  "position": "Meia",
+  "birth": 1969,
+  "name": "Paulo Sérgio",
+  "team": "Bayer Leverkusen-ALE",
+  "number": 18,
+  "isStarter": false
+},
+{
+  "id": 30,
+  "position": "Atacante",
+  "birth": 1966,
+  "name": "Müller",
+  "team": "São Paulo-BRA",
+  "number": 19,
+  "isStarter": false
+},
+{
+  "id": 31,
+  "position": "Atacante",
+  "birth": 1976,
+  "name": "Ronaldinho",
+  "team": "Cruzeiro-BRA",
+  "number": 20,
+  "isStarter": false
+},
+{
+  "id": 32,
+  "position": "Atacante",
+  "birth": 1969,
+  "name": "Viola",
+  "team": "Corinthians-BRA",
+  "number": 21,
+  "isStarter": false
+},
+{
+  "id": 33,
+  "position": "Goleiro",
+  "birth": 1959,
+  "name": "Gilmar",
+  "team": "Flamengo-BRA",
+  "number": 22,
+  "isStarter": false
+}] 
+
+1- No App.jsx vai fazer um <h1> com o título "Seleção Brasileira 1994";
+
+2- Fará o componente chamado CopaBrasil94.jsx;
+
+3- Dentro do Componente vai criar a estrutura (Digitar, NÃO copiar e colar):
+
+	 return (
+    <div>
+      <h2>
+        {nome do jogador} {numero do jogador} {isStarter && <span className="starter"> Titular </span>}
+      </h2>
+      <fieldset className={id%2 === 0? 'green': 'yellow'}>
+          <ul>
+            <li>Posição:{ }</li>
+            <li>{ variante criada para calcular a idade do jogador na copa} anos de idade</li>
+            <li>Clube: {team}</li>
+          </ul>
+          <button onClick={handleAge}> Idade hoje </button>
+      </fieldset>
+    </div>
+  );
+
+4- Vai prencher as os espaços dinâmicos com as variáveis correspondentes (por exemplo, position);
+
+5- Vai criar duas variáveis (pode criar com const ou let) para chegar a idade do jogador na copa (1994) e outra para saber a idade HOJE (2023). CriadaS
+as variáveis, ELAS serão colocadas dentro dos campo dinâmicos;
+
+6- Dentro da tag <button> será atribuído ao atributo "onCLick" como mostrado na estrutura acima, uma função nominada "handleAge", a qual será criada confor-
+me a estrutura abaixo:
+
+	const handleName = () =>{
+
+		console.log(`A idade atual do jogador ${  } hoje é de ${  } anos de idade`)
+
+		}
+
+	
+	OBS: Aqui estaremos lidando com um conceito NOVO que ainda não vimos, o qual consiste em exibir as variáveis dentro de TEMPLATES LITERALS (ou STRINGS), 
+	para isto em vez de aspas duplas ou simples, abriremos ou fecharemos o trecho do texto ao qual desejamos inserir as variáveis com o sinal de crase e em
+	seguida dentro da estrutura ${ } digitaremos a variável correspondente.
+	Caso não usássemos o recurso das Templates Literals, seria muito mais trabalhoso atingirmos o mesmo resultado. Se pegarmos o exemplo acima, assim ficaria:
+	console.log("A idade atual do jogador" + variavelDoNome + "hoje me dia" + variavelDaIdadeAtual + "anos de idade")
+
+
+7 - Um arquivo css deverá ser criado DENTRO da pasta components com o mesmo nome correpondente ao componente criado, só mudando a terminação (.css);
+
+8- O css já está pronto (basta copiar e color no aquivo css):
+
+	.green{
+   		 background-color:#23F219 ;
+   
+	}
+
+	.green li{
+    		color: #EDECEA
+	}
+
+	.yellow{
+ 		background-color:#EDEC1A ;
+	}
+
+	.yellow li{
+    		color: #45008C
+
+	}
+
+	h2{
+    		display: flex;
+    		justify-content: space-between;
+
+	}
+
+	.starter{
+    		font-size: 16px;
+    		font-family: Arial;
+
+	}
+	body{
+
+		background-color:#EDECEA
+
+	}
+
+9 - Para importar o arquivo css dentro do componente digite import "./  ", quando acabar de digitar a barra, OU vc pode esperar o vscode completar com o nome
+do arquivo, OU vc pode digitar o nome do arquivo diretamente.
+	
+	OBS: É MUITO IMPORTANTE digitar e completar o endereço do arquivo com a terminação .css, CASO NÃO façamos isto, além de não refletir corretamente, o 
+	mesmo import pode atrapalhar as demais configurações do estilo do componente.	
+		
+
+	

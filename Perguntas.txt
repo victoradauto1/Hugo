@@ -1,0 +1,22 @@
+1 - O que é SPA?
+
+	Significa Simple Page Application que é estrutura mais atual usada na construção de sites, feita em frameworks desenvolvidos em JavaScript, cujo o principal
+objetivo é  dinamizar a renderização e portanto deixar nosso site, chamado de agora aplicação, mais performático. 
+	Enquanto na estrutura "antiga" usávamos estruturas de navegação entre páginas, agora iremos utilizar componentes que em tese serão interados dentro uma única
+"página" , dita aplicação (App Principal), fazendo com que ganhemos o tempo antes perdido com o "reload" de páginas.
+
+2 - Exemplos de SPA?
+
+	Angular, Vue e React.
+
+3 - O que é Vanilla?
+
+	Desenvolvimente puro de Java Script
+
+4 - Qual a estrutura de um item de um Objeto em JS?
+
+	Chave : valor
+
+5 - O que é prop em React?
+
+	

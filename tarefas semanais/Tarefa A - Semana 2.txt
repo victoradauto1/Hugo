@@ -1,0 +1,78 @@
+TAREFA SEMANA 2
+
+Projeto A  
+
+- Utilizará a lista "filmes" (copiar e colar no App do projeto)
+
+
+filmes = {
+    "id": 1,
+    "title": "Titanic",
+    "year": 1997,
+    "awards": 12,
+    "rating": "Ótimo",
+    "record": true
+   
+}, {
+    "id": 2,
+    "title": "Rocky - Um lutador",
+    "year": 1976,
+    "awards": 1,
+    "rating": "Bom",
+    "record": false
+  
+}, {
+    "id": 3,
+    "title": "Allien - O Oitavo passageiro",
+    "year": 1987,
+    "awards": 1,
+    "rating": "Ótimo",
+    "record": false
+}, {
+    "id": 4,
+    "title": "Forest Gump - O contador de histórias",
+    "year": 1994,
+    "awards": 5,
+    "rating": "Ótimo",
+    "record": true
+}]
+
+
+- Fará o componente chamado Movies.jsx;
+
+- Dentro do Componente vai criar a estrutura (Digitar, NÃO copiar e colar):
+
+	<h2> { } </h2>  (nea você colocará o título do filme)
+	<ul>
+		<li>Ano do lançamento do filme: { } </li>
+		<li>Prêmios reebidos: { } </li>
+		<li> Avaliação do Público: { } </li>
+	</ul>
+	{ record ? <p> Bateu récorde de bilheteria!! </p>  :  <p> Não bateu récorde de público, mas o stúdio teve retorno considerável! </p> }
+
+- Vai prencher as os espaços dinâmicos com as variávei correspondente (por exemplo, title);
+
+- Vai estilizar dentro do atributo style={ } as opções ternárias do item "record";
+
+- Vai fazer a comunicação entre as variantes do componente [que estarão dentro de chaves , por exemplo, function Movie ( { title, year } ) ] que terão seus 
+respectivos correspondente dentro da tag do componente no App principal, dentro da função Map;
+
+- Vai criar uma função Map dentro do App principal dentro de um espaço dinâmico:
+
+	{ filmes. map ( (set) => ( 
+
+	< Movies 
+		
+	key={set.id}
+	title= {set.title}
+
+	...continuar até completar tudo
+
+	/>
+
+) )
+	
+		
+
+	
+

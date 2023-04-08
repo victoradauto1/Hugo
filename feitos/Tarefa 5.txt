@@ -1,0 +1,85 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarefa dia 13/01/2023 -  No ódio do calor ahahhaha</title>
+  
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------
+App.jsx
+
+function App() {
+  const exercicio = [
+
+    {
+      id: "1",
+      type: "Camisa esportiva;",
+      model: "2022;",
+      color: "preta;",
+      size: "P, M e G;",
+      isSet: true
+    },
+    {
+      id: "2",
+      type: "Calça Jeans;",
+      model: "2022;",
+      color: "Preta, azul, cinza e verde;",
+      size: "P, M e G;",
+      isSet: false
+    },
+    {
+      id: "3",
+      type: "Calça de moletom;",
+      model: "2022;",
+      color: "Preta, azul, cinza e verde;",
+      size: "P, M e G;",
+      isSet: true
+    },
+    {
+      id: "4",
+      type: "Tênis de corrida;",
+      color: "preto e azul;",
+      model: "2022;",
+      size: "38 - 44;",
+      isSet: true
+    },
+  ]
+
+  return (
+    <div className="App">
+
+      <h1>Roupas no estoque para vendas on-line</h1>
+      {exercicio.map((set) => (
+
+        <div>
+
+          <ul>
+            <li>Roupa: {set.type}</li>
+            <li>Cor: {set.color}</li>
+            <li>Ano de fabricação: {set.model}</li>
+            <li>Tamanho disponivel: {set.size}</li>
+          </ul>
+
+          {set.isSet && <p>Disponivel no estoque!</p>}
+
+        </div>
+
+      ))}
+
+
+    </div>
+  )
+}
+
+export default App

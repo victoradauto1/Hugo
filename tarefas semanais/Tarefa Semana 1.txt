@@ -1,0 +1,30 @@
+TAREFA 1
+
+1 - Criar dois projetos através do Vite, renderList1 e renderList2:
+
+	a) Comando inicial: npm create vite@latest "Nome do Projeto" (em seguida seguir as especificações do sistema);
+
+	b) Limpar o App deixado apenas uma <div> </div> envolvendo a área de renderização (return);
+
+	c) Aporveitar o css já existente ClassName="App";
+
+	e) Mudar o nome no index.html (fazê-lo dentro da tag <title> </title>);
+
+	f) crie dentro do return (parte de renderização) um <h1> alusivo à lista que você irá utilizar (antes do map).
+
+2 - Criar uma variável constante onde irá armazenar uma lista de objetos, as quais irá usar para renderizar em blocos (As listas irão no documento anexo);
+
+3 - Criar dentro de chaves de exibição dinâmica React ( { } ) uma estrutura de função MAP a partir da lista de objetos criado no item2,
+
+criando dentro um quadro de exibição em ormato de lista não ordenada, conforme o modelo abaixo (caso vc queira usar da criatividade e alterar, fique  vontade!):
+
+	{lista.map((set) => (
+        <div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          {set.fator && <p>Exibir isto</p>}    <----- Usar operador ternário para criar uma renderização condicional como no exemplo
+        </div>
+      ))}

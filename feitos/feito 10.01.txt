@@ -1,0 +1,60 @@
+
+function App() {
+  const exercicios = [
+
+    {
+      id: 1,
+      type: "Camisa",
+      color: "preta",
+      model: "22",
+      size: "P, M e G",
+      isSet: true,
+    },
+    {
+      id: 2,
+      type: "Calça Jeans",
+      color: "preta, azul e cinza",
+      model: "22",
+      size: "P, M e G",
+      isSet: true,
+    },
+    {
+      id: 3,
+      type: "Calça  de Moletom",
+      color: "preta, azul, cinza e verde",
+      model: "22",
+      size: "P, M e G",
+      isSet: false
+    },
+    {
+      id: 4,
+      type: "Tenis de corrida",
+      color: "preta e azul",
+      model: "22",
+      size: "38 - 44",
+      isSet: true,
+    },
+
+  ]
+
+
+  return (
+    <div className="App">
+
+      <h1>Roupas</h1>
+
+      {exercicios.map((set) => (
+        <div>
+          <h2>{set.title}</h2>
+          <ul>
+            <li>Roupa:{set.type}</li>
+            <li>Cor:{set.color}</li>
+            <li>Ano de Fabricação:{set.model}</li>
+            <li>Tamanho disponivel:{set.size}</li>
+          </ul>
+          {set.isSet && <p>Disponivel no estoque</p>}
+        </div>
+      ))}
+    </div>
+  )
+}

@@ -1,0 +1,22 @@
+SEMANA 3
+
+- Uso de classes (className) dentro de operadores ternários;
+
+- Condicionais com operadores matemáicos (mudar cor de fundo da linha );
+
+- botão (para exbir algo ou mudar a className de uma tag)
+
+
+TAREFAS A SEREM IMPLEMENTADAS 
+
+- renderizar os cards de jogadores com o background color variando entre 
+as cores verde (#60FAC5) e amarelo (#FAF791);
+
+- exibir um campo com a idade do jogador em 1994 e a idade atual;
+
+- exibir o status de titular ou reserva;
+
+- botão ativando uma lista de titulares;
+
+
+

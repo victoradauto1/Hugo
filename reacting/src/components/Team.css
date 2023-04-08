@@ -1,0 +1,48 @@
+.goleiro{
+    text-align: center;
+}
+
+.zaga{
+    display: flex;
+    justify-content: space-between;
+}
+
+.volancia{
+    display: flex;
+    justify-content: center;
+}
+
+.v1{
+    margin-right: 10px;
+}
+
+.v2{
+    margin-left: 10px;
+}
+
+.meia{
+    display: flex;
+    justify-content: center;
+}
+
+.m1{
+    margin-right: 80px;
+}
+
+.m2{
+    margin-left: 80px;
+}
+
+.ataque{
+    display: flex;
+    justify-content: center;
+}
+
+.a1{
+    margin-right: 20px;
+}
+
+.a2{
+    margin-left: 20px;
+}
+

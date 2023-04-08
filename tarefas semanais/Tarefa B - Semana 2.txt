@@ -1,0 +1,84 @@
+TAREFA SEMANA 2
+
+Projeto B  
+
+- Utilizará a lista "roupas" (copiar e colar no App do projeto)
+
+
+ const roupas = [
+
+    {
+      id: 1,
+      type: "Camisa",
+      color: "preta",
+      model: "Primavera/Verão 23",
+      size: "P, M e G",
+      isSet: true,
+    },
+    {
+      id: 2,
+      type: "Calça Jeans",
+      color: "preta, azul e cinza",
+      model: "Inverno 22",
+      size: "P, M e G",
+      isSet: true,
+    },
+    {
+      id: 3,
+      type: "Calça  de Moletom",
+      color: "preta, azul, cinza e verde",
+      model: "Outono 22",
+      size: "P, M e G",
+      isSet: false
+    },
+    {
+      id: 4,
+      type: "Tenis de corrida",
+      color: "preta e azul",
+      model: "Primavera/Verão 23",
+      size: "38 - 44",
+      isSet: true,
+    },
+
+  ]
+
+
+- Fará o componente chamado Fashion.jsx;
+
+- Dentro do Componente vai criar a estrutura (Digitar, NÃO copiar e colar):
+
+	<h2> { } </h2>  (nele você colocará o título do vestuário)
+	<ul>
+		<li>Produto número: { }</li>
+		<li>Cor: { } </li>
+		<li>Coleção: { } </li>
+		<li>Tamanhos disponíveis: { } </li>
+	</ul>
+	{ isSet ? <p> Disponível no estoque da loja </p>  :  <p> Em falta </p> }
+
+- Vai prencher as os espaços dinâmicos com as variávei correspondente (por exemplo, size);
+
+- Vai estilizar dentro do atributo style={ } as opções ternárias do item "isSet";
+
+- Vai fazer a comunicação entre as variantes do componente [que estarão dentro de chaves , por exemplo, function Movie ( { type, model } ) ] que terão seus 
+respectivos correspondente dentro da tag do componente no App principal, dentro da função Map;
+
+- Vai criar uma função Map dentro do App principal dentro de um espaço dinâmico:
+
+	{ roupas. map ( (set) => ( 
+
+	< Movies 
+		
+	key={set.id}
+	type={set.type}
+
+	...continuar até completar tudo
+
+	/>
+
+) )
+	
+		
+
+	
+

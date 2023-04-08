@@ -1,0 +1,23 @@
+.green{
+    color: green;
+    font-size: 20px;
+}
+
+.red{
+    color: red;
+    font-size: 30px;
+}
+
+.purple{
+    color: purple;
+    font-size: 14px;
+}
+
+.btn{
+    background-color: lightblue;
+    color: darkblue;
+}
+
+.btn:hover{
+    background-color: lightgray
+}
